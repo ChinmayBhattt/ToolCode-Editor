@@ -1,54 +1,47 @@
-# React + TypeScript + Vite
+# ToolCode Editor
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+ToolCode Editor is a lightweight and efficient code editor built for developers who need a simple yet powerful tool for writing and editing code. It is designed to support multiple programming languages and enhance productivity.
 
-Currently, two official plugins are available:
+## Features
+- **Multi-language support**: Write and edit code in various programming languages.
+- **Syntax Highlighting**: Improves readability with color-coded syntax.
+- **Lightweight and Fast**: Runs efficiently with minimal system resource usage.
+- **User-friendly Interface**: Simple and intuitive design for a seamless coding experience.
+- **Open Source**: Contributions and enhancements are welcome.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Installation
 
-## Expanding the ESLint configuration
+To use ToolCode Editor, follow these steps:
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+```bash
+# Clone the repository
+git clone https://github.com/ChinmayBhattt/ToolCode-Editor.git
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+# Navigate to the project directory
+cd ToolCode-Editor
+
+# Install dependencies (if applicable)
+npm install
+
+# Run the application
+npm start
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Usage
+- Open the editor and start coding in your preferred language.
+- Use built-in shortcuts for quick access to features.
+- Save, load, and edit files effortlessly.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## Contribution
+Contributions are welcome! Follow these steps to contribute:
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature-branch`).
+3. Commit your changes (`git commit -m 'Add new feature'`).
+4. Push to the branch (`git push origin feature-branch`).
+5. Open a Pull Request.
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+## License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Contact
+For any issues or feature requests, feel free to open an issue or reach out to [Chinmay Bhatt](https://github.com/ChinmayBhattt).
